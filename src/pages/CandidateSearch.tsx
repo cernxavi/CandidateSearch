@@ -51,14 +51,12 @@ const CandidateSearch = () => {
       {/* Display list of candidates */}
       <ul>
         {candidates.map((candidate) => (
-          <li class='search' key={candidate.id}>
+          <li key={candidate.id}>
             <img src={candidate.avatar_url} alt={`${candidate.login}'s avatar`} width="50" />
-            <p class='search' >{candidate.login}</p>
+            <p  >{candidate.login}</p>
             <a href={candidate.html_url} target="_blank" rel="noopener noreferrer">
               View Profile
             </a>
-            <button class='add' type='submit' href='Starter-Code/src/pages/PotentialCandidates.tsx' >+</button>
-            <button class='delete' type='submit' href='Starter-Code/src/pages/PotentialCandidates.tsx' >-</button>
           </li>
         ))}
       </ul>

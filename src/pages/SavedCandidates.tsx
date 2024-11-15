@@ -22,13 +22,13 @@ const SavedCandidates = () => {
       ) : (
         <ul>
           {savedCandidates.map((candidate) => (
-            <li class='saved' key={candidate.id}>
+            <li key={candidate.id}>
               <img
                 src={candidate.avatar_url}
                 alt={`${candidate.login}'s avatar`}
                 width="50"
               />
-              <p class='saved'>{candidate.login}</p>
+              <p>{candidate.login}</p>
               <a
                 href={candidate.html_url}
                 target="_blank"
